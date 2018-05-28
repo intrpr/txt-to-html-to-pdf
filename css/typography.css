@@ -30,7 +30,7 @@ hgroup,
 main,
 nav,
 section {
-    display: block
+    display: block;
 }
 
 body {
@@ -59,15 +59,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    margin-top: 0;
-    margin-bottom: .5rem
+h6,
+p {
+    margin: 2rem 0;
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 1rem
-}
+p { font-size: 1.57rem; line-height: 1.2; }
+
 
 abbr[data-original-title],
 abbr[title] {
