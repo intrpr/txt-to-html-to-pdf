@@ -15,12 +15,15 @@ So, as of this writing, it will try to take advantage of layout, typographic, an
 
 This work by Bulwer (in connection with Juan Pablo Bonet's 1620 renderings of manual alphabet handshapes [Reducción de las letras y arte para ensenar a hablar los neudos ("Summary of the letters and the art of teaching speech to the mute")]) is personal to me in my other work as a researcher of deaf studies and the visual representation of signed languages.
 
+Homebase on archive.org for these materials: https://archive.org/details/gallaudetuniversity-deafrarematerials
+
 Bulwer
 - Bulwer, John (1644). Chirologia, or, The naturall language of the hand: composed of the speaking motions, and discoursing gestures thereof. London: Thomas Harper. https://archive.org/details/gu_chirologianat00gent
 - text version http://downloads.it.ox.ac.uk/ota-public/tcp/Texts-HTML/free/A30/A30105.html
 
 Bonet
 - Bonet, Juan Pablo (date?) "Simplification of the Letters of the Alphabet and Method of Teaching Deaf-Mutes to Speak", https://archive.org/details/simplificationof00juan
+- https://archive.org/details/ReductionDeLasLetrasYArteParaEnsenarAhablarLosMudos
 - handshape images of "Simplification" https://commons.wikimedia.org/wiki/Category:Reduction_de_las_letras_y_arte_para_ense%C3%B1ar_a_ablar_los_mudos_(1620)
 - https://www.thefreelibrary.com/A+Silent+Minority+Deaf+Education+in+Spain+1550-1835-a054258717
 - Plann, Susan (1997). A Silent Minority: Deaf Education in Spain, 1550-1835. Berkeley: University of California Press. https://publishing.cdlib.org/ucpressebooks/view?docId=ft338nb1x6;brand=ucpress
