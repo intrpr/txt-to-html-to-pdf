@@ -9,6 +9,7 @@ and
 -- https://www.orbitals.com/self/ligature/ligature.htm
 -- http://www.parsonjohn.org/18th%20century%20replica%20printing.pdf
 -- https://www.prepressure.com/printing/history/1700-1749
+
 nothing looks like four-hundred-year-old typography.
 
 So, as of this writing, it will try to take advantage of layout, typographic, and, most importantly/frustratingly, letterform consistencies. I'll likely introduce color into the design as I try to replicate an original seventeenth-century work.
