@@ -12,6 +12,8 @@ and
 
 nothing looks like four-hundred-year-old typography.
 
+(Check out this CSS property for justified text: http://www.css3.com/css-text-justify)
+
 So, as of this writing, it will try to take advantage of layout, typographic, and, most importantly/frustratingly, letterform consistencies. I'll likely introduce color into the design as I try to replicate an original seventeenth-century work.
 
 This work by Bulwer (in connection with Juan Pablo Bonet's 1620 renderings of manual alphabet handshapes [Reducción de las letras y arte para ensenar a hablar los neudos ("Summary of the letters and the art of teaching speech to the mute")]) is personal to me in my other work as a researcher of deaf studies and the visual representation of signed languages.
