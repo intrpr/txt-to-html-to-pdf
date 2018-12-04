@@ -41,3 +41,5 @@ Bede
 - http://penelope.uchicago.edu/Thayer/E/Journals/CJ/23/8/De_Loquela_Digitorum*.html
 - https://en.wikipedia.org/wiki/Finger-counting
 - http://www.gutenberg.org/files/25664/25664-h/25664-h.htm
+
+Recreation of Caslon's type sample: http://www.balluff-transnational.eu/design/2018/12/a-specimen-by-william-caslon
