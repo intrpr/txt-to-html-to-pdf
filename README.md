@@ -7,7 +7,7 @@
 - http://letteringjs.com
 - https://www.quertime.com/article/30-web-typography-tools-frameworks-and-libraries
 - https://bashooka.com/coding/javascript-css-libraries-for-typographic-web-design/
-
+-------
 This is intended to be a web typographic experiment on John Bulwer's 1644 Chirologia. It won't be comprehensive — it's much too long — and it won't be typographically perfect — while there are good typographic candidates in the 
 - IM Fell
 -- https://fonts.google.com/specimen/IM+Fell+English
