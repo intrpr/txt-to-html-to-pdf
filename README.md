@@ -1,6 +1,12 @@
 # Chirologia, by John Bulwer, 1644
 
 **What typographic adjustment libraries would be helpful here?**
+- https://github.com/rikschennink/fitty
+- https://medium.com/type-thursday/use-javascript-libraries-for-typography-on-the-web-303704fbedba
+- https://webdesign.tutsplus.com/courses/essential-js-libraries-for-web-typography
+- http://letteringjs.com
+- https://www.quertime.com/article/30-web-typography-tools-frameworks-and-libraries
+- https://bashooka.com/coding/javascript-css-libraries-for-typographic-web-design/
 
 This is intended to be a web typographic experiment on John Bulwer's 1644 Chirologia. It won't be comprehensive — it's much too long — and it won't be typographically perfect — while there are good typographic candidates in the 
 - IM Fell
