@@ -1,6 +1,7 @@
 # Chirologia, by John Bulwer, 1644
 
 **What typographic adjustment libraries would be helpful here?**
+
 This is intended to be a web typographic experiment on John Bulwer's 1644 Chirologia. It won't be comprehensive — it's much too long — and it won't be typographically perfect — while there are good typographic candidates in the 
 - IM Fell
 -- https://fonts.google.com/specimen/IM+Fell+English
