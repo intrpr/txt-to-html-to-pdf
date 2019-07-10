@@ -1,4 +1,4 @@
-# HTML to printed PDF
+# Text to HTML to printed PDF
 
 10 Jul 2019: Found css4.pub which opens up massive possibilities for this project. Would like to try three experiments here:
 - Chirologia, by John Bulwer, 1644 and convert to PDF for print
