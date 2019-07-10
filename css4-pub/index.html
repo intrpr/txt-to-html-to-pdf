@@ -1,0 +1,100 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>CSS for Publishing - home</title>
+	<!--<base href='//css4.pub/'>-->
+	<link rel='stylesheet' href='style.css'>
+	<meta name='description' content='Printing CSS. To paper and PDF.'>
+	<meta name='keywords' content='Printing CSS PDF'></head>
+<body class="home">    <!-- having the name of the page as a class to be selected is practical -->
+
+<nav>
+<h1><a href='index.html'>CSS for Publishing</a></h1>
+<ul>
+<li><a href='https://css4.pub/home'>Home </a></li> 
+<li><a href='https://css4.pub/tutorials'>
+Tutorials </a></li> 
+<li><a href='https://css4.pub/samples'>
+Samples </a></li> 
+<li><a href='https://css4.pub/specs'>
+Specs </a></li> 
+</ul>
+</nav>
+
+
+<div id=wrapper>
+<h1>How to use HTML and CSS for printing</h1>
+<!--How to use CSS for paper-based publishing-->
+
+<table>
+<tr><th>Genre                  <th>HTML<th>PDF<th>What to look for
+
+<tr><td>Letter<td><a href="2015/business/simple.html">HTML</a><td><a href="2015/business/simple.pdf">PDF</a>
+<td>Why not write business letters in HTML? They can easily be converted to PDF and attached in email. This is a minimalist example to showcase how simple it can be. Click on the HTML link and use View/Source in your browser to see!
+
+<tr><td id=somatosensory>Textbook <td><a href="2018/textbook/somatosensory.html">HTML</a><td><a href="2018/textbook/somatosensory.pdf">PDF</a><td>Sidenotes are often placed in the outside margin of textbooks, and in the PDF version of document they alternate between left and right side. Figures and tables float to the top and bottom of pages, and wide content extend into margins.
+
+<tr><td id=icelandic>Dictionary <td><a href="2015/icelandic/dictionary.html">HTML</a><td><a href="2015/icelandic/dictionary.pdf">PDF</a><td>Dictionaries often use multi-column layout to save space, and running headers indicate keyword entries on that page. Notice how each letter is marked on a tab on right pages. The fonts used in the PDF version are  <a href="https://monokrom.no/fonts/satyr">Satyr</a> and <a href="https://monokrom.no/fonts/faunus">Faunus</a>, made by <a href="https://www.monokrom.no">Monokrom</a>. <a href="https://archive.org">Archive.org</a> has a <a href="https://archive.org/details/concisedictionar001857">scanned copy</a> of the printed edition from 1910.
+
+<tr><td>Scientific Journal<td><a href="2015/usenix/example.html">HTML</a> <td><a href="2015/usenix/example.pdf">PDF</a><td>The USENIX conference Proceedings has a two-column layout with figures floating to the top and bottom. In the HTML source of this sample document, references are inline but appear at the end by way of JavaScript. 
+
+<tr><td>Essay<td><a href="2015/malthus/essay.html">HTML</a><td><a href="2015/malthus/essay.pdf">PDF</a><td>Thomas Malthus published his essay on <em>Principles of Population</em> in 1798. At the time, the descending "s" was in fashion and this reconstruction uses the 'text-replace' property to recreate the original printed book (<a href="https://www.archive.org">Archive.org</a> has a <a href="https://archive.org/details/essayonprincipl00malt">scanned copy</a>). Also, the document uses ligatures and the Table of Contents is generated with a script.
+
+<tr><td>Letter<td><a href="2015/business/letter.html">HTML</a><td><a href="2015/business/letter.pdf">PDF</a>
+<td>This business letter uses several font families, and even a script to find the current date. The footer at the bottom of the page floats there by itself.
+
+<tr><td>Textbook               <td><a href="2015/cssdftw-sample/sample.html">HTML</a><td><a href="2015/cssdftw-sample/sample.pdf">PDF</a><td>This book, <a href="https://www.amazon.com/Cascading-Style-Sheets-Designing-Web/dp/0321193121/ref=sr_1_sc_1?ie=UTF8&qid=1426149977&sr=8-1-spell&keywords=cascading+style+sheets+desiging+for+the+web">Cascading Style Sheets &ndash; Designing for the Web</a>, was the first printed book written in HTML and CSS. The sample document contains the frontmatter and first chapter. 
+<tr><td>Fiction                <td><a href="2015/oliver-twist/oliver-twist.html">HTML</a><td><a href="2015/oliver-twist/oliver-twist.pdf">PDF</a><td><a href="https://www.gutenberg.org">Project Gutenberg</a> has published Oliver Twist and many other classic titles in HTML. By adding a small style sheet, a PDF file can be created. A small script automatically generates the Table of Contents.
+
+<tr><td>Poetry                 <td><a href="https://www.wiumlie.no/2014/ibsen/digte.html">HTML</a><td><a href="https://www.wiumlie.no/2014/ibsen/digte.pdf">PDF</a><td>This document reconstructs the first edition of Henrik Ibsen's poetry collection, first published in 1871. His typographers in Copenhagen didn't have all the Norwegian letters in they typecases, so they improvised. The modern-day equivalent is to modify font files, and to hand-code other errors they made. The poems are in Norwegian, but a <a href="https://www.wiumlie.no/2014/ibsen/digte.html#english">section in English</a> describes the process.
+
+
+<tr><td>Short story                 <td><a href="2017/gogol/cloak.html">HTML</a><td><a href="2017/gogol/cloak.pdf">PDF</a><td>This short story by Gogol is found on <a href="http://www.gutenberg.org/cache/epub/13437/pg13437-images.html">Project Gutenberg</a> (<a href="2017/gogol/pg13437.txt">local copy</a>). The text was cut/pasted into a text editor and a few HTML tags were added, resulting in a <a href="2017/gogol/cloak-basic.html">basic HTML version</a>. To achieve better quote marks, the quotation marks (") in the text was replaced with <code>&lt;q&gt;</code> elements. After that, a style sheet was added format the text into a PDF file. The <a href="https://www.princexml.com/doc/properties/prince-text-replace/">text-replace</a> property is used to further improve punctuation, and to replace <em>St. Petersburg</em> with <em>Leningrad</em>. A few footnotes and figures were added to the story on a whim. Note how the style sheet expresses that footnotes should be inline, one figure should float to the top of the column, and the other figure floats to the top of the page.
+
+<tr><td>TOC<td><a href="2018/toc/index.html">HTML</a><td><a href="2018/toc/index.pdf">PDF</a><td>This document generates at Table of Contents (TOC) by way of JavaScript. You can easily test it by running prince from the command line:
+
+<pre>
+
+  prince --javascript http://css4.pub/2018/toc -O toc.pdf
+
+</pre>
+
+
+<tr><td>TOC + index<td><a href="2017/musick/musick.html">HTML</a><td><a href="2017/musick/musick.pdf">PDF</a><td>This document generates at ToC by way of JavaScript. Even more impressively, the script also prints out an index which is added to the end of the document. Notice how subsequent page numbers in the index are folded into a range. To produce this document, try running these commands from a Linux command-line:
+
+<pre>
+
+  wget http://css4.pub/2017/musick/musick.html -O foo.html; 
+  prince --javascript foo.html >>foo.html; 
+  prince --javascript foo.html; 
+  evince -p 6 foo.pdf
+
+</pre>
+
+<tr><td>Multifile TOC<td><td><a href="2018/multifile-toc/book.pdf">PDF</a><td>For longer books, it makes sense to split chapters into separate files. Generating a Table of Contents across all files is tricky in JavaScript since scripts only see one one file at a time. In Prince, you can work around this with a two-pass solution where the first pass collects items for the ToC, and the second pass generates the PDF with the ToC. To try this for yourself, first fetch these five sample files into your own file system, e.g. by running:
+<pre>
+
+  wget http://css4.pub/2018/multifile-toc/toc.js;
+  wget http://css4.pub/2018/multifile-toc/toc.html;
+  wget http://css4.pub/2018/multifile-toc/ch1.html;
+  wget http://css4.pub/2018/multifile-toc/ch2.html;
+  wget http://css4.pub/2018/multifile-toc/style.css;
+
+</pre>
+<p>Then, run Prince twice:
+
+<pre>
+
+  prince --javascript --script=toc.js ch1.html ch2.html -o book.pdf >> toc.html;
+  prince toc.html ch1.html ch2.html -o book.pdf;
+
+</pre>
+
+<tr id=sidenotes><td>Sidenotes<td><a href="2019/sidenotes/index.html">HTML</a><td><a href="2019/sidenotes/index.pdf">PDF</a><td>Selecting elements based on which column they appear in is not possible in current CSS. However, by using JavaScript to examine the tree of rendered boxes in Price, one can extract this information and the rerun the the formatting process. This two-pass approach is used to float elements to the left of the first column, and to the right of the second column:
+<pre>
+
+  wget http://css4.pub/2019/sidenotes/index.html;
+  wget http://css4.pub/2019/sidenotes/styles.css;
+  prince --javascript index.html >> index.html;
+  prince index.html
+</pre>

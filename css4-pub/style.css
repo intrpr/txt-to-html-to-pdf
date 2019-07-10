@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Tauri");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Fanwood+Text:400,400italic");
+
+html, body, div, h1, h2, h3, p, blockquote, ul, ol, li, pre { margin: 0; padding: 0 }
+pre { white-space: pre-wrap }
+
+li { margin-left: 1.5em }
+
+html { min-height: 100%; position: relative; }
+
+body { 
+    margin-top: 100px;
+    background: #f3d333; 
+    font: 16px Lato, sans-serif; 
+}
+
+h1, h2, h3 { margin: 0.5 0 0.7em; padding: 0; font-family: "Fanwood Text", serif; font-weight: normal }
+h1 { font-size: 3em; font-style: italic; text-align: center }
+h2 { font-size: 2em; }
+h2 { font-size: 1em; font-weight: bold }
+
+a { 
+    text-decoration: none; 
+    border-bottom: 1px #fff dotted; 
+}
+
+nav { 
+    position: fixed; 
+    top: 0; left: 0; right: 0;
+    height: 100px; 
+    background: black; 
+    color: white;
+}
+
+nav a { color: white }
+
+nav h1 {
+    float: left;
+    margin: 10px 20px 0 10%; 
+    font: 60px Tauri, sans-serif;
+    text-transform: uppercase;
+}
+
+nav ul {
+    text-align: right;
+    margin: 20px 10% 10px 0;
+    font: bold 14px Lato, sans-serif;
+    text-transform: uppercase;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    margin: 5px;
+}
+
+nav a {
+    border: none;
+}
+
+nav li a:hover {
+    background: #16a6b6;
+}
+
+#wrapper {
+    color: black;
+    background: rgba(255, 255, 200, 0.9);
+    margin: 40px 10% 0 10%;
+    padding: 20px;
+}
+
+#wrapper a {
+    color: #444;
+    border-bottom: 1px #444 dotted;
+}
+
+aside {
+    display: none;
+    width: 20%;
+    float: left;
+    height: auto;
+    padding: 20px;
+    font-size: 14px;
+    margin-left: 2%;
+    margin-top: 40px;
+    background: #16a6b6;
+}
+
+
+footer {
+    display: block; position: fixed; bottom: 0; 
+    width: 50em;   /* hopefully credits fit this space */
+    right: -47em;  /* hopefully the word 'credit' fits into the 3 em difference */
+    height: 1.6em;
+    background: black;
+    color: white;
+    font-size: 13px;
+    padding: 0.4em 0.8em;
+    transition: 0.5s;
+}
+
+footer a { color: white }
+footer:hover { right: 0 } /* move footer in when hovered */
+
+/* styles to for image that fade in/out */
+
+.fadein { position: relative; width: 100%; z-index: -1 }
+.fadein img { position: absolute; left:0; top:0; width: 100%; }
+
+/* some sensible settings on tables */
+
+table { margin: 1em 0; border-collase: collapse }
+td, th { padding: 0.1em 0.3em; vertical-align: top }
+th { text-align: left }
+td.sum { text-align: right }
+
+
+/* some sensible classes to keep around */
+
+.center { text-align: center }
+
+.border {
+    margin-bottom: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.hide {
+    margin: 0;
+    width: 100%;
+    display: none;
+}
+
+/* style for settings and editing */
+/*
+span.editText {
+    display: block;
+    cursor: pointer;
+}
+
+span.editText textarea {
+    border: 0;
+    padding: 0;
+    width: 100%;
+    resize: none;
+    color: inherit;
+    display: block;
+    overflow: hidden;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    background-color: transparent;
+}
+
+.change {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 5px;
+    background: #1F2B33;
+}
+
+.change select {
+    width: 20%;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    background: #16a6b6;
+}
+
+.settings {
+    width: 100%;
+    clear: both;
+    color: #fff;
+    height: auto;
+    padding: 5px 0;
+    text-align: center;
+    background: #16a6b6;
+}
+
+.settings h3 {
+    font-family: Lato, sans-serif;
+}
+
+.settings .change {
+    width: 52%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+*/

@@ -1,0 +1,171 @@
+/* Adobe Caslon Pro, Bold Italic */
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("ACaslonPro-BoldItalic.otf")
+}
+
+/* Adobe Caslon Pro, Bold */
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("ACaslonPro-Bold.otf")
+}
+
+/* Adobe Caslon Pro, Italic */
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("ACaslonPro-Italic.otf")
+}
+
+/* Adobe Caslon Pro, Regular */
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("ACaslonPro-Regular.otf")
+}
+
+/* Adobe Caslon Pro, Semibold Italic */
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("ACaslonPro-SemiboldItalic.otf")
+}
+
+/* Adobe Caslon Pro, Semibold */
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("ACaslonPro-Semibold.otf")
+}
+
+/* ITC Caslon 224 Std, Black Italic */
+@font-face {
+    font-family: "ITC Caslon 224 Std";
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("Caslon224Std-BlackItalic.otf")
+}
+
+/* ITC Caslon 224 Std, Black */
+@font-face {
+    font-family: "ITC Caslon 224 Std";
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("Caslon224Std-Black.otf")
+}
+
+/* ITC Caslon 224 Std, Bold Italic */
+@font-face {
+    font-family: "ITC Caslon 224 Std";
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("Caslon224Std-BoldItalic.otf")
+}
+
+/* ITC Caslon 224 Std, Bold */
+@font-face {
+    font-family: "ITC Caslon 224 Std";
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("Caslon224Std-Bold.otf")
+}
+
+/* ITC Caslon 224 Std, Book Italic */
+@font-face {
+    font-family: "ITC Caslon 224 Std";
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("Caslon224Std-BookItalic.otf")
+}
+
+/* ITC Caslon 224 Std, Book */
+@font-face {
+    font-family: "ITC Caslon 224 Std";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("Caslon224Std-Book.otf")
+}
+
+/* ITC Caslon 224 Std, Medium Italic */
+@font-face {
+    font-family: "ITC Caslon 224 Std";
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("Caslon224Std-MediumItalic.otf")
+}
+
+/* ITC Caslon 224 Std, Medium */
+@font-face {
+    font-family: "ITC Caslon 224 Std";
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("Caslon224Std-Medium.otf")
+}
+
+/* Caslon 3 LT Std, Italic */
+@font-face {
+    font-family: "Caslon 3 LT Std";
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("Caslon3LTStd-Italic.otf")
+}
+
+/* Caslon 3 LT Std, Roman */
+@font-face {
+    font-family: "Caslon 3 LT Std";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("Caslon3LTStd-Roman.otf")
+}
+
+/* Caslon 540 LT Std, Italic */
+@font-face {
+    font-family: "Caslon 540 LT Std";
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("Caslon540LTStd-Italic.otf")
+}
+
+/* Caslon 540 LT Std, Roman */
+@font-face {
+    font-family: "Caslon 540 LT Std";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("Caslon540LTStd-Roman.otf")
+}
+
+/* Caslon Open Face LT Std, Regular */
+@font-face {
+    font-family: "Caslon Open Face LT Std";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("CaslonOpenFaceLTStd.otf")
+}
+

@@ -1,0 +1,223 @@
+<html>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<title>Musick</title>
+<script>
+Prince.trackBoxes = true;
+Prince.addEventListener("complete", makeix, false);
+
+function getText(e)
+{
+    var text = "";
+
+    for (var x = e.firstChild; x != null; x = x.nextSibling)
+    {
+	if (x.nodeType == x.TEXT_NODE)
+	{
+	    text += x.data;
+	}
+	else if (x.nodeType == x.ELEMENT_NODE)
+	{
+	    text += getText(x);
+	}
+    }
+
+    return text;
+}
+
+function getElementsByClassName(oElm, strTagName, strClassName){
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	strClassName = strClassName.replace(/\-/g, "\\-");
+	var oRegExp = new RegExp("(^|\\s)" + strClassName + "(\\s|$)");
+	var oElement;
+	for(var i=0; i<arrElements.length; i++){
+		oElement = arrElements[i];
+		if(oRegExp.test(oElement.className)){
+			arrReturnElements.push(oElement);
+		}
+	}
+	return (arrReturnElements)
+}
+
+
+function maketoc()
+{
+    var hs = document.getElementsByTagName("h2");
+    var toc = document.getElementById('toc');
+    for(var i=0; i<hs.length; i++)
+    {
+	var text = document.createTextNode(getText(hs[i]));
+        hs[i].setAttribute("id", "ch"+i);
+	var link = document.createElement("a");
+	link.setAttribute("href", "#ch"+i);
+	link.appendChild(text);
+	var li = document.createElement("li");
+        li.appendChild(link);
+	toc.appendChild(li); 
+    }
+}
+
+
+function makeix()
+{
+  var ixcontainer = document.getElementById('ix');
+  var ids = new Array();
+  var ent = new Array();
+
+// find all elements that contain index entries, go through them sequentially
+
+  ix = getElementsByClassName(document, "*", "ix");
+  for(var i=0; i<ix.length; i++)
+    {
+        ix[i].setAttribute("id", "ix"+i);
+
+// store the reference in a string in an associative array
+
+	var str = getText(ix[i]);
+        if (ids[str]) {
+	  ids[str] = ids[str]+",ix"+i;
+        } else {
+          ids[str] = "ix"+i;
+        }
+
+// check to see if the index entry is there already, if not add it
+
+	if ((ent.join("")).indexOf(str) < 0)
+          { ent.push(str) }
+    }
+
+// the ent array now contains list of index entries, sort it!
+
+  ent.sort();
+
+  var str="<ul id=ix>";
+
+// go through list of index entries, create one li element per entry
+
+  for (var i=0; i<ent.length; i++)
+    {
+       str = str+"<li><span class=entry>"+ent[i]+"</span>";
+
+       var idsa = ids[ent[i]].split(",");
+
+//     idsa is an array which contains strings like "ix0","ix4" 
+
+       var prevpage = 0;
+       var collapsing = "";
+       var divider = "";
+
+       for (var j=0; j<idsa.length; j++)
+        {
+           var e = document.getElementById(idsa[j]);
+           var eboxes = e.getPrinceBoxes(); 
+           if (eboxes.length > 0) {
+              var box = eboxes[0];
+              var page = box.pageNum;
+
+//            page now has the name numer of the index entry
+
+              if (page > prevpage) {  //
+                 if (prevpage==0) { // first index for this entry
+                   str=str+"<span id=#"+idsa[j]+">"+page+"</span>";
+                   prevpage = page;
+                 } else if (page > (prevpage + 1)) { // e.g. prevpage = 1; page = 3
+                   if (collapsing) { // now we must terminate collapse
+                     str=str+"-<span id=#"+idsa[j]+">"+prevpage+"</span>"; 
+                     collapsing = 0; // not collapsing any more
+                   } else {
+                     str=str+", <span id=#"+idsa[j]+">"+page+"</span>"; 
+                     prevpage = page;
+                   }
+                 } else { // e.g.  prevpage = 43  and page = 44, who knows what is next?
+                   str=str+"<!-- collapsing "+page+" -->";
+                   collapsing = "-"; // true
+                   prevpage = page;
+                 }
+              } else {
+                 str=str+"<!--skipping id=#"+idsa[j]+" on page "+page+"-->";
+              }
+           }
+        }
+
+        // if we are collapsing at the end, terminate 
+
+        if (collapsing) {
+           str=str+"-<span id=#"+idsa[j-1]+">"+page+"</span>"; //
+        }
+    }
+  str=str+"</ul>"; 
+  console.log(str);
+}
+</script>
+<style>
+@page {
+  size: 10cm 10cm;
+  margin: 1cm;
+
+  @bottom-center {
+    content: counter(page);
+  }
+}
+
+
+body { font: 10px "Crimson Text", serif }
+
+h1, h2 { 
+  page-break-before: always;
+  text-align: center;
+}
+
+.center { text-align: center }
+
+a { text-decoration: none }
+ 
+#toc { columns: 2 }
+#toc, #ix, li { list-style-type: none; margin: 0; padding: 0 }
+#toc a:after { content: leader('.') target-counter(attr(href), page) }
+
+#ix span.entry:after { content: leader('.') }
+
+/* #ix a { content: target-counter(attr(href), page); padding-left: 0.3em } */
+
+@media screen {
+  html { background: black; }
+  body { 
+    font-size: 18px;
+    width: 30em;
+    background: white;
+    margin: 2em auto;
+    padding: 1em;
+  }
+}
+
+</style>
+</head>
+
+<body onload="maketoc();">
+
+
+<h1>A brief history of Musick</h1>
+
+<p class=center>(Featuring <span class=ix>Bach</span> himself)
+
+<h2>Contents</h2>
+
+<ul id=toc></ul>
+
+
+<h2>Baroque period</h2>
+
+<p>The era of Baroque music (1600-1750) began when the first operas were written and when contrapuntal music became prevalent. Composers from the Baroque era include <span class="ix">Bach</span>, <span class="ix">Handel</span> and <span class="ix">Telemann</span>. Note that the <span class="ix">Bach</span> family has many members. 
+
+<h2>Classical period</h2>
+
+<p>The death of <span class="ix">Bach</span> signifies the start of the classical period. The music of the Classical period (1750-1800) is characterized by homophonic texture, often featuring a prominent melody with accompaniment. <span class="ix">Haydn</span> and <span class="ix">Mozart</span> are among the central figures of the Classical period.
+
+<h2>Romantic era</h2>
+
+<p>In 1800, the Romantic era (1800-1890s) in music developed, with <span class="ix">Beethoven</span> and <span class="ix">Schubert</span> as transitional composers who introduced a more dramatic, expressive style. <span class="ix">Bach</span> was not present. 
+
+<h2>Index</h2>
+
+<ul id=ix><li><span class=entry>Bach</span><span id=#ix0>1</span>, <span id=#ix1>3</span><!--skipping id=#ix4 on page 3--><!-- collapsing 4 --><!-- collapsing 5 -->-<span id=#ix10>5</span><li><span class=entry>Beethoven</span><span id=#ix8>5</span><li><span class=entry>Handel</span><span id=#ix2>3</span><li><span class=entry>Haydn</span><span id=#ix6>4</span><li><span class=entry>Mozart</span><span id=#ix7>4</span><li><span class=entry>Schubert</span><span id=#ix9>5</span><li><span class=entry>Telemann</span><span id=#ix3>3</span></ul>

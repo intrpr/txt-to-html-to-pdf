@@ -1,12 +1,21 @@
-# Chirologia, by John Bulwer, 1644
+# HTML to printed PDF
+
+10 Jul 2019: Found css4.pub which opens up massive possibilities for this project. Would like to try three experiments here:
+- Chirologia, by John Bulwer, 1644 and convert to PDF for print
+- JSB *Dictionary of Action…* and convert to PDF for print.
+- LDS GC talks > format html and convert to PDF for print.
+- Lead to HTML articles for interpreting class that can be made into PDF for print.
+
+css4.pub apparently runs on Prince https://www.princexml.com/ which may or may not be helpful and/or too indepth.
 
 **What typographic adjustment libraries would be helpful here?**
+- https://css4.pub/
 - https://github.com/rikschennink/fitty
 - https://medium.com/type-thursday/use-javascript-libraries-for-typography-on-the-web-303704fbedba
 - https://webdesign.tutsplus.com/courses/essential-js-libraries-for-web-typography
 - http://letteringjs.com
 - https://www.quertime.com/article/30-web-typography-tools-frameworks-and-libraries
-- https://bashooka.com/coding/javascript-css-libraries-for-typographic-web-design/
+- https://bashooka.com/coding/javascript-css-libraries-for-typographic-web-design
 -------
 This is intended to be a web typographic experiment on John Bulwer's 1644 Chirologia. It won't be comprehensive — it's much too long — and it won't be typographically perfect — while there are good typographic candidates in the 
 - IM Fell
@@ -29,7 +38,7 @@ This work by Bulwer (in connection with Juan Pablo Bonet's 1620 renderings of ma
 
 Homebase on archive.org for these materials: https://archive.org/details/gallaudetuniversity-deafrarematerials
 
-Bulwer
+Chirologia, by John Bulwer, 1644
 - Bulwer, John (1644). Chirologia, or, The naturall language of the hand: composed of the speaking motions, and discoursing gestures thereof. London: Thomas Harper. https://archive.org/details/gu_chirologianat00gent
 - text version http://downloads.it.ox.ac.uk/ota-public/tcp/Texts-HTML/free/A30/A30105.html
 
@@ -51,4 +60,5 @@ Bede
 - https://en.wikipedia.org/wiki/Finger-counting
 - http://www.gutenberg.org/files/25664/25664-h/25664-h.htm
 
-Recreation of Caslon's type sample: http://www.balluff-transnational.eu/design/2018/12/a-specimen-by-william-caslon
+Recreation of Caslon's type sample: 
+- http://www.balluff-transnational.eu/design/2018/12/a-specimen-by-william-caslon
